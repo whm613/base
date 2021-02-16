@@ -31,7 +31,7 @@ const geometry_msgs = rosnodejs.require('geometry_msgs').msg;
 //For serial port communiation with modbus-rtu protocol
 const SerialPort = require('serialport');
 const ModbusMaster = require('modbus-rtu').ModbusMaster;
-const serialPort = new SerialPort("/dev/ttyUSB0", {baudRate: 19200});
+const serialPort = new SerialPort("/dev/ttyUSB1", {baudRate: 19200});
 const master = new ModbusMaster(serialPort);
 //end
 
